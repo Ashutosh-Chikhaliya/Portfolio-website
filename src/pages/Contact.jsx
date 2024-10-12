@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../public/stylesheets/contact.css'; // Custom CSS file
-import Email from '../components/email';
+import Email from '../components/Email.jsx';
 
 const Contact = () => {
     const [formData, setFormData] = useState({

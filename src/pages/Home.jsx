@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import BackgroundShapes from '../components/backgroundShapes';
+import BackgroundShapes from "../components/BackgroundShapes.jsx";
 import "../../public/stylesheets/home.css"
-import Email from '../components/email';
+import Email from "../components/Email.jsx"
 
 
 const Home = () => {
