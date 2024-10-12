@@ -21,7 +21,7 @@ const AboutMe = () => {
                     <Link to="" className="contact-link">Contact me →</Link>
                 </div>
 
-                <img className='aboutImg' src="../../public/Images/coding-html-svgrepo-com (1).svg" alt="" />
+                <img className='aboutImg' src="../../public/Images/coding-html-svgrepo-com.svg" alt="" />
 
             </section>
         </>

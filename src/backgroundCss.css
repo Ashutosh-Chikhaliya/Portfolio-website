@@ -40,10 +40,10 @@
     transform: translate(-10vw, -5vw) scale(1) rotate(0deg);
   }
   50% {
-    transform: translate(0vw, 0vw) scale(1.2) rotate(30deg); 
+    transform: translate(0vw, 0vw) scale(1.2) rotate(30deg);
   }
   100% {
-    transform: translate(10vw, -10vw) scale(0.8) rotate(-45deg); 
+    transform: translate(10vw, -10vw) scale(0.8) rotate(-45deg);
   }
 }
 
@@ -55,7 +55,6 @@
     transform: translate(5vw, 5vw) scale(1.15) rotate(-35deg);
   }
   100% {
-    transform: translate(-5vw, -5vw) scale(0.9) rotate(40deg);/
+    transform: translate(-5vw, -5vw) scale(0.9) rotate(40deg);
   }
 }
-
