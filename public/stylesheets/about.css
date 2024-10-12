@@ -1,0 +1,63 @@
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  color: #fff; /* White text */
+  height: 182px;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.about-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+.about-content strong {
+  color: #000000; /* Bold name */
+}
+
+body.dark .about-content p,
+body.dark .about-content strong {
+  color: #fff;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.aboutImg {
+  display: inline-block;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  top: -39%;
+  right: 1%;
+}

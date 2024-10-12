@@ -1,0 +1,61 @@
+.background-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.p2-shape {
+  position: absolute;
+  height: 40vw;
+  width: 40vw;
+  bottom: -20vw;
+  right: -20vw;
+}
+
+.shape4 {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0057e7, #57b5ff);
+  animation: fluidMove 15s ease-in-out infinite alternate;
+  filter: blur(30px);
+}
+
+.shape5 {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  background-color: #0046a1;
+  animation: fluidMove2 20s ease-in-out infinite alternate;
+  filter: blur(40px);
+}
+
+@keyframes fluidMove {
+  0% {
+    transform: translate(-10vw, -5vw) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(0vw, 0vw) scale(1.2) rotate(30deg); 
+  }
+  100% {
+    transform: translate(10vw, -10vw) scale(0.8) rotate(-45deg); 
+  }
+}
+
+@keyframes fluidMove2 {
+  0% {
+    transform: translate(-10vw, 0vw) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(5vw, 5vw) scale(1.15) rotate(-35deg);
+  }
+  100% {
+    transform: translate(-5vw, -5vw) scale(0.9) rotate(40deg);/
+  }
+}
+
