@@ -1,7 +1,7 @@
 import './App.css';
 import "../public/stylesheets/responsive.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import BackgroundShapes from './components/backgroundShapes';
+import BackgroundShapes from './components/BackgroundShapes.jsx';
 import Navbar from "./components/Navbar"
 import Projects from './pages/ProjectsPage';
 import Contact from './pages/Contact';
