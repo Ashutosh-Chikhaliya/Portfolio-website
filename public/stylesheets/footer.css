@@ -37,10 +37,10 @@ body.dark .copyright {
 .icon {
   width: 24px;
   height: 24px;
-  filter: invert(0.2); /* Slightly darken icons */
+  filter: invert(0.2);
   transition: filter 0.3s ease;
 }
 
 .icon:hover {
-  filter: invert(0); /* Restore original color on hover */
+  filter: invert(0);
 }

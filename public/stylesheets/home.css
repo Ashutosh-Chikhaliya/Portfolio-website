@@ -20,7 +20,6 @@
   padding: 20px;
 }
 
-/* Style for your name */
 .name-title {
   font-family: "Saira", sans-serif;
   font-size: 5rem;
@@ -110,14 +109,14 @@ body.dark .contact-box {
 }
 
 .contact-box.copied::before {
-  background-color: #27ae60; /* Green background for "Copied" */
-  right: 0; /* Fully slide the green background */
+  background-color: #27ae60;
+  right: 0;
 }
 
 .contact-box.copied .copy {
-  opacity: 1; /* Show the 'Copied!' message */
+  opacity: 1;
 }
 
 .contact-box.copied .text {
-  opacity: 0; /* Hide the email text */
+  opacity: 0;
 }

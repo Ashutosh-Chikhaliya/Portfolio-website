@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../public/stylesheets/about.css'; // Import your custom CSS file for styles
 import { Link } from 'react-scroll';
-import Contact from './Contact.jsx';
+import aboutImage from "../../public/Images/coding-html-svgrepo-com (1).svg"
 
 const AboutMe = () => {
 
@@ -21,7 +21,7 @@ const AboutMe = () => {
                     <Link to="" className="contact-link">Contact me →</Link>
                 </div>
 
-                <img className='aboutImg' src="../../public/Images/coding-html-svgrepo-com.svg" alt="" />
+                <img className='aboutImg' src={aboutImage} alt="" />
 
             </section>
         </>
