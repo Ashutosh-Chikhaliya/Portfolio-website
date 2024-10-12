@@ -55,7 +55,7 @@
 }
 
 .project-card img {
-  width: 37vw;
+  width: 100%;
   height: auto;
   position: relative;
   object-fit: cover;
@@ -67,6 +67,7 @@
 /* Overlay for links */
 .links-overlay {
   position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
