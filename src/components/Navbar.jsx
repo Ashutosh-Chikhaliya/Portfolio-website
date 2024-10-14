@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <>
             <nav className={`${isDarkMode ? 'bg-black' : 'bg-light'} ${isDarkMode ? 'text-white' : 'text-black'} header ${isOpen ? 'active' : ''}`}>
-                <div className="container mx-auto flex justify-between items-center navbar">
+                <div className="container flex justify-between items-center navbar">
                     <h1 className="text-2xl font-bold">AC<span className='highlight-blue'>.</span></h1>
                     <ul className={`nav-links ${isOpen ? 'active' : ''} flex justify-center items-center`}>
                         {['Home', 'About-Me', 'Projects', 'Skills', 'Contact'].map((link) => (
