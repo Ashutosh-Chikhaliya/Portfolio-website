@@ -1,60 +1,23 @@
 /* home page */
 
 .homepage-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   width: 70vw;
   margin: 0 auto;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
 .name-title {
   font-family: "Saira", sans-serif;
-  font-size: 5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: black;
-  line-height: 1;
 }
 
 body.dark .name-title {
   color: white;
 }
 
-/* Subtitle - Web Developer */
-.sub-title {
-  font-size: 2.5rem;
-  margin-top: 7px;
-  font-weight: normal;
-}
-
 /* Contact box styling */
 .contact-box {
   font-family: "Saira", sans-serif;
-  position: relative;
-  display: inline-block;
-  padding: 20px;
-  background-color: transparent;
   border: 1px solid rgb(0, 0, 0);
-  color: #000000;
-  border-radius: 0px;
-  overflow: hidden;
-  cursor: pointer;
-  text-align: center;
   transition: background-color 0.3s ease;
-  margin-top: 15px;
 }
 
 body.dark .contact-box {
@@ -62,24 +25,14 @@ body.dark .contact-box {
   border: 1px solid white;
 }
 
-.contact-box .copy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: none;
-  color: #ecf0f1;
-  z-index: 2;
-  font-size: 1.2rem;
-  padding: 0;
-  opacity: 0; /* Hidden initially */
+.contact-box .text {
   transition: opacity 0.3s ease;
 }
 
-.contact-box .text {
-  z-index: 0;
-  position: relative;
+.contact-box .copy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: opacity 0.3s ease;
 }
 

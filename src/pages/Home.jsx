@@ -10,12 +10,11 @@ const Home = () => {
     return (
         <div>
             <BackgroundShapes />
-            <div className="homepage-container">
-                <div className="content">
-                    <h1 className="name-title">ASHUTOSH CHIKHALIYA<span className="highlight-blue">.</span></h1>
-                    <h2 className="sub-title highlight-blue">Web Developer</h2>
+            <div className="homepage-container flex justify-center items-center h-screen text-center">
+                <div className="content flex flex-col items-center justify-center items-center p-5">
+                    <h1 className="name-title text-7xl font-bold tracking-wide">ASHUTOSH CHIKHALIYA<span className="highlight-blue">.</span></h1>
+                    <h2 className="sub-title mt-2 highlight-blue">Web Developer</h2>
                     <Email />
-                    {/* Contact box with dynamic button text and copied state */}
                 </div>
             </div>
         </div>

@@ -25,9 +25,9 @@ const Email = () => {
         }, 2000);
     }
     return (
-        <div className={`contact-box ${copied ? 'copied' : ''}`} onClick={copyToClipboard}>
-            <span className="text"> <span>📧  |  </span>  ashutoshchikhaliya@gmail.com</span>
-            <button className="copy">{copied ? 'Copied!' : 'Copy'}</button>
+        <div className={`contact-box ${copied ? 'copied' : ''} relative inline-block p-5 truncate cursor-pointer mt-4`} onClick={copyToClipboard}>
+            <span className="text z-0 relative"> <span>📧  |  </span>  ashutoshchikhaliya@gmail.com</span>
+            <button className="copy opacity-0 absolute text-white z-10 text-xl">{copied ? 'Copied!' : 'Copy'}</button>
         </div>
     )
 }

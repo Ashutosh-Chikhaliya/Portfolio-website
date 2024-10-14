@@ -9,19 +9,19 @@ const AboutMe = () => {
     return (
         <>
             <h2 id="about-me-section"> <span className='highlight-blue'>//</span>  About me</h2>
-            <section className="about-me">
-                <div className="about-content">
-                    <p>
+            <section className="about-me flex justify-between">
+                <div className="about-content max-w-screen-sm text-xl leading-8">
+                    <p className=' mb-5'>
                         Hi, my name is <strong>Ashutosh Chikhaliya</strong>. I'm passionate about technology and a web development enthusiast.
                         I've been using React, Node.js, Express, and more in my projects.
                     </p>
                     <p>
                         Currently studying, practicing, and looking for new opportunities.
                     </p>
-                    <Link to="" className="contact-link">Contact me →</Link>
+                    <Link to="" className="contact-link inline-block mt-4 font-semibold text-2xl">Contact me →</Link>
                 </div>
 
-                <img className='aboutImg' src={aboutImage} alt="" />
+                <img className='aboutImg relative h-80 w-80' src={aboutImage} alt="" />
 
             </section>
         </>

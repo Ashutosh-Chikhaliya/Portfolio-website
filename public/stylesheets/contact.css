@@ -1,6 +1,4 @@
 .contact-page {
-  color: #000000;
-  padding: 50px 20px;
   width: 70vw;
   margin: 0 auto;
 }
@@ -9,42 +7,13 @@ body.dark .contact-page {
   color: white;
 }
 
-.email-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subtitle {
-  margin-top: 3rem;
-  font-size: 1.2rem;
-  color: #545454;
-}
-
 body.dark .subtitle {
   color: rgb(164, 164, 164);
 }
 
 /* Social Media Section */
-.social-media {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.social-media h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
 .social-icon img {
-  width: 50px;
-  height: 50px;
   transition: filter 0.3s ease;
 }
 
