@@ -25,11 +25,11 @@ const ProjectsPage = () => {
             <div className="timeline overflow-hidden" ref={projectsContainerRef}>
                 {Projects.map((project, index) => ( // Use the renamed variable here
                     <div className={`project-wrapper ${index % 2 === 0 ? 'left' : 'right'} relative flex justify-center items-center mt-12 mb-12 ml-0 mr-0 w-full`} key={project.id}>
-                        <div class="project-card relative m-6 ml-0  bg-cover bg-center">
+                        <div className="project-card relative m-6 ml-0  bg-cover bg-center">
                             <img src={project.image} alt="Project Image" />
-                            <div class="links-overlay absolute opacity-0 z-10 flex">
-                                <a href={project.codeLink} class="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-code"></i></a>
-                                <a href={project.liveLink} class="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-external-link-alt"></i></a>
+                            <div className="links-overlay absolute opacity-0 z-10 flex">
+                                <a href={project.codeLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-code"></i></a>
+                                <a href={project.liveLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
 
