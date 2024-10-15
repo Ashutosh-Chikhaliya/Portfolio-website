@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../../public/stylesheets/about.css'; // Import your custom CSS file for styles
+import '../stylesheets/about.css'; // Import your custom CSS file for styles
 import { Link } from 'react-scroll';
 import aboutImage from "../../public/Images/coding-html-svgrepo-com (1).svg"
 

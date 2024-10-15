@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../../public/stylesheets/home.css"
+import "../stylesheets/home.css"
 
 const Email = () => {
     const [copied, setCopied] = useState(false);

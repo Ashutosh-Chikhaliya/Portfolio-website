@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import "../../public/stylesheets/projects.css"; // Your existing styles
+import "../stylesheets/projects.css"; // Your existing styles
 import { Projects } from '../projectData.js';
 import { Link } from 'react-scroll';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BackgroundShapes from "../components/BackgroundShapes.jsx";
-import "../../public/stylesheets/home.css"
+import "../stylesheets/home.css"
 import Email from "../components/Email.jsx"
 
 

@@ -1,5 +1,5 @@
 import './App.css';
-import "../public/stylesheets/responsive.css"
+import "./stylesheets/responsive.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import BackgroundShapes from './components/BackgroundShapes.jsx';
 import Navbar from "./components/Navbar.jsx"

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../public/stylesheets/contact.css'; // Custom CSS file
+import '../stylesheets/contact.css'; // Custom CSS file
 import Email from '../components/Email.jsx';
 
 const Contact = () => {

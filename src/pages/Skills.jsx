@@ -1,6 +1,6 @@
 import React from 'react';
 import skillsData from "../skillsData.json";
-import "../../public/stylesheets/skills.css"
+import "../stylesheets/skills.css"
 const Skills = () => {
     return (
         <section className="skills-section my-0 mx-auto py-12 mt-4">
