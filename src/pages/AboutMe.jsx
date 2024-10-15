@@ -8,10 +8,10 @@ const AboutMe = () => {
 
     return (
         <>
-            <h2 id="about-me-section"> <span className='highlight-blue'>//</span>  About me</h2>
-            <section className="about-me flex justify-between">
+            <h2 className='font-semibold text-4xl text-center' id="about-me-section"> <span className='highlight-blue'>//</span>  About me</h2>
+            <section className="about-me flex justify-between my-0 mx-auto mt-16">
                 <div className="about-content max-w-screen-sm text-xl leading-8">
-                    <p className=' mb-5'>
+                    <p className='mb-5'>
                         Hi, my name is <strong>Ashutosh Chikhaliya</strong>. I'm passionate about technology and a web development enthusiast.
                         I've been using React, Node.js, Express, and more in my projects.
                     </p>

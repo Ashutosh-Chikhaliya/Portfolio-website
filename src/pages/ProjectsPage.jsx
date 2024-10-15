@@ -20,7 +20,7 @@ const ProjectsPage = () => {
 
     return (
         <section className="projects-container relative overflow-hidden pt-12 pb-12 pl-0 pr-0">
-            <h2 id="about-me-section"><span className='highlight-blue'>//</span> Projects</h2>
+            <h2 className='font-semibold text-4xl text-center' id="about-me-section"><span className='highlight-blue'>//</span> Projects</h2>
 
             <div className="timeline overflow-hidden" ref={projectsContainerRef}>
                 {Projects.map((project, index) => ( // Use the renamed variable here

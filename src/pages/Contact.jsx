@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <div className="contact-page pt-12 pb-12 pl-5 pr-5">
-            <h2 id="about-me-section"><span className='highlight-blue'>//</span> Contact</h2>
+            <h2 className='font-semibold text-4xl text-center' id="about-me-section"><span className='highlight-blue'>//</span> Contact</h2>
             {/* Title Section */}
             <div className="text-center mb-8">
                 <p className="subtitle mt-12 text-xl text-zinc-500">If you have any questions or would just like to say hello, feel free to email me.</p>
@@ -20,7 +20,7 @@ const Contact = () => {
 
             {/* Social Media Section */}
             <div className="social-media mt-5 ">
-                <h2 className='mb-5'>Connect with me</h2>
+                <h2 className='mb-5 text-center text-3xl font-semibold'>Connect with me</h2>
                 <div className="icons flex justify-center gap-5">
                     <a href="https://www.instagram.com/ashutosh_chikhaliya/" className="social-icon w-12 h-12">
                         <img src="https://img.icons8.com/color/144/instagram.png" alt="LinkedIn" />

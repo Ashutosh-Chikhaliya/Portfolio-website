@@ -1,0 +1,13 @@
+/* Footer container styles */
+.footer {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+body.dark .footer {
+  border-top: 2px solid white;
+}
+
+body.dark .copyright {
+  color: white;
+}

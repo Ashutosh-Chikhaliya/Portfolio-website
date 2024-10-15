@@ -1,0 +1,22 @@
+.about-me {
+  height: 182px;
+  width: 70vw;
+}
+
+body.dark .about-content p,
+body.dark .about-content strong {
+  color: #fff;
+}
+
+.contact-link {
+  color: #007bff;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.aboutImg {
+  top: -39%;
+  right: 1%;
+}

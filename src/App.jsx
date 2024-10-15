@@ -22,19 +22,19 @@ function App() {
         <Home />
       </div>
 
-      <div id="About-Me">
+      <div id="About-Me" className='pt-32 pb-16'>
         <AboutMe />
       </div>
 
-      <div id="Projects">
+      <div id="Projects" className='pt-20 pb-20'>
         <ProjectsPage />
       </div>
 
-      <div id="Skills">
+      <div id="Skills" className='pt-16'>
         <Skills />
       </div>
 
-      <div id="Contact">
+      <div id="Contact" className='pt-16'>
         <Contact />
       </div>
 
