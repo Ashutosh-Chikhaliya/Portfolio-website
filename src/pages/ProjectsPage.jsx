@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import "../stylesheets/projects.css"; // Your existing styles
-import { Projects } from '../projectData.js';
-import { Link } from 'react-scroll';
+import { Projects } from '../projectData.js'
 
 
 const ProjectsPage = () => {

@@ -59,7 +59,7 @@
   }
 
   .social-media-links {
-    display: none;
+    display: none !important;
   }
 }
 
