@@ -72,3 +72,14 @@ body.dark .contact-box {
 .contact-box.copied .text {
   opacity: 0;
 }
+
+#perpective {
+  position: relative;
+  perspective: 2000px;
+}
+
+/* tilt Div */
+#tiltDiv {
+  /* background-color: red; */
+  width: fit-content;
+}
