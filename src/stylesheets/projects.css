@@ -4,15 +4,12 @@
   margin: 0 auto;
 }
 
-.timeline {
-  max-height: 400px;
-  transition: max-height 0.5s ease-in-out;
-}
+/* Rest of your styles remain the same */
 
 .project-card {
   width: 37vw;
   height: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px #007bff75;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease;
 }
@@ -27,10 +24,12 @@
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.5s ease;
   z-index: 1;
+  border-radius: 16px;
 }
 
 .project-card:hover::after {
   background-color: rgba(0, 0, 0, 0.698);
+  border-radius: 16px;
 }
 
 .project-card img {
@@ -52,6 +51,7 @@
 .project-card:hover .links-overlay {
   opacity: 1;
   pointer-events: auto;
+  border-radius: 30px;
 }
 
 .link-btn {
@@ -86,16 +86,4 @@ body.dark .project-details p {
 body.dark .tag {
   color: #007bff;
   background-color: #09223c;
-}
-
-body.dark .show-more-btn {
-  color: white;
-}
-
-.show-more-btn:hover {
-  color: rgb(0, 123, 255);
-}
-
-body.dark .show-more-btn:hover {
-  color: rgb(0, 123, 255);
 }

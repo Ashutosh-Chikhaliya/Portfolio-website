@@ -88,10 +88,6 @@
   .project-card img {
     width: 70vw !important;
   }
-
-  .timeline {
-    max-height: 1150px !important;
-  }
 }
 
 @media only screen and (max-width: 2000px) {

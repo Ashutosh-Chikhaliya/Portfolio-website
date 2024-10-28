@@ -1,34 +1,26 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import "../stylesheets/projects.css"; // Your existing styles
-import { Projects } from '../projectData.js'
-
+import { Projects } from '../projectData.js';
 
 const ProjectsPage = () => {
-    const [showAllProjects, setShowAllProjects] = useState(false);
-    const projectsContainerRef = useRef(null);
-
-    useEffect(() => {
-        if (projectsContainerRef.current) {
-            if (showAllProjects) {
-                projectsContainerRef.current.style.maxHeight = `${projectsContainerRef.current.scrollHeight}px`;
-            } else {
-                projectsContainerRef.current.style.maxHeight = "810px";
-            }
-        }
-    }, [showAllProjects]);
-
     return (
         <section className="projects-container relative overflow-hidden pt-12 pb-12 pl-0 pr-0">
-            <h2 className='font-semibold text-4xl text-center' id="about-me-section"><span className='highlight-blue'>//</span> Projects</h2>
+            <h2 className='font-semibold text-4xl text-center' id="about-me-section">
+                <span className='highlight-blue'>//</span> Projects
+            </h2>
 
-            <div className="timeline overflow-hidden" ref={projectsContainerRef}>
-                {Projects.map((project, index) => ( // Use the renamed variable here
+            <div className="timeline overflow-hidden">
+                {Projects.map((project, index) => (
                     <div className={`project-wrapper ${index % 2 === 0 ? 'left' : 'right'} relative flex justify-center items-center mt-12 mb-12 ml-0 mr-0 w-full`} key={project.id}>
-                        <div className="project-card relative m-6 ml-0  bg-cover bg-center">
-                            <img src={project.image} alt="Project Image" />
-                            <div className="links-overlay absolute opacity-0 z-10 flex">
-                                <a href={project.codeLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-code"></i></a>
-                                <a href={project.liveLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none"> <i className="fas fa-external-link-alt"></i></a>
+                        <div className="project-card relative m-6 ml-0 bg-cover bg-center rounded-2xl">
+                            <img src={project.image} alt="Project Image" className='rounded-2xl' />
+                            <div className="links-overlay absolute opacity-0 z-10 flex rounded-2xl">
+                                <a href={project.codeLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none">
+                                    <i className="fas fa-code"></i>
+                                </a>
+                                <a href={project.liveLink} className="link-btn flex justify-center items-center w-16 h-16 m-1 text-lg cursor-pointer rounded-xl border-none">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
 
@@ -44,15 +36,6 @@ const ProjectsPage = () => {
                     </div>
                 ))}
             </div>
-
-            {Projects.length > 2 && ( // Use the renamed variable here
-                <div className="show-more-container flex align-center justify-center text-center">
-                    <button onClick={() => setShowAllProjects(!showAllProjects)} className="show-more-btn bg-none border-none text-black text-xl cursor-pointer">
-                        Show {showAllProjects ? 'Less' : 'More'}
-                        <span className={`arrow text-xl ml-3`}>&#x2193;</span>
-                    </button>
-                </div>
-            )}
         </section>
     );
 };
