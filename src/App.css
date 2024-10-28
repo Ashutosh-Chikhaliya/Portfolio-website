@@ -77,17 +77,44 @@ body.dark .social-media-links a:hover,
 
 /* navbar */
 
-.curly-bracket {
-  transition: opacity 0.4s ease;
-}
-
 .navlink:hover {
   color: rgb(0, 123, 255);
 }
 
-.navlink:hover .curly-bracket {
+.navlink {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.navlink span {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.navlink::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  color: rgb(0, 68, 255);
+  transform: translateY(0);
+  transition: transform 0.5s ease;
   opacity: 1;
-  color: yellow;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Hover effect */
+.navlink:hover span {
+  transform: translateY(-100%); /* Move original text up */
+}
+
+.navlink:hover::before {
+  transform: translateY(-100%); /* Move duplicate text up */
 }
 
 .burger {
@@ -113,4 +140,39 @@ body.dark .social-media-links a:hover,
 
 .line.active:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Logo scrolling effect */
+.logo {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.logo .logo-name {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Ensure the main logo text transitions */
+}
+
+.logo::before {
+  content: "ASHU.";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: rgb(0, 68, 255);
+  transform: translateY(0); /* Start position below the main text */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+/* Hover effect on the logo */
+.logo:hover .logo-name {
+  transform: translateY(-100%); /* Move the main logo text up */
+}
+
+.logo:hover::before {
+  transform: translateY(-100%); /* Move the duplicate text up */
 }

@@ -19,7 +19,21 @@ const Navbar = () => {
         <>
             <nav className={` header ${isOpen ? 'active' : ''} h-28 w-full my-0 mx-auto fixed z-10`}>
                 <div className="flex justify-between items-center navbar fixed h-28 left-2/4 ">
-                    <h1 className="text-2xl font-bold">AC<span className='highlight-blue'>.</span></h1>
+                    <h1 className="text-2xl font-bold cursor-pointer logo" data-text="ASHU">
+                        <Link
+                            to="Home" // Target the Home section
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            data-text="ASHU" // Display duplicate text for scroll effect
+                            className='logo-link'
+                            onClick={() => setActiveLink('Home')} // Set active link on click
+                        >
+                        </Link>
+                        <span className='logo-name'>ASHU<span className="highlight-blue">.</span></span>
+
+                    </h1>
+
                     <ul className={`nav-links ${isOpen ? 'active' : ''} flex justify-center items-center`}>
                         {['Home', 'About-Me', 'Projects', 'Skills', 'Contact'].map((link) => (
                             <li key={link} className='cursor-pointer'>
@@ -28,17 +42,14 @@ const Navbar = () => {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
+                                    data-text={link}
                                     className={`text-lg navlink relative ${activeLink === link ? "active" : ""}`}
                                     onClick={() => {
                                         setActiveLink(link);
-                                        setIsOpen(false); // Close menu on link click
+                                        setIsOpen(false);
                                     }}
                                 >
-                                    <span className="curly-bracket opacity-0">{'{'}</span>
-                                    <span> </span>
-                                    {link}
-                                    <span> </span>
-                                    <span className="curly-bracket opacity-0">{'}'}</span>
+                                    <span className="navlink-content px-2">{link}</span>
                                 </Link>
                             </li>
                         ))}
@@ -70,13 +81,8 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Overlay to dim and blur background */}
-            <div className={`overlay fixed w-full h-full opacity-0 pointer-events-none ${isOpen ? 'active opacity-100 ' : ''}`} onClick={toggleMenu}></div> {/* Close menu on overlay click */}
 
-            {/* Main Content Area */}
-            <div className={`content ${isOpen ? 'blur filter:var(40px)' : ''}`}>
-                {/* Your main content goes here */}
-            </div>
+
         </>
     );
 };

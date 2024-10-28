@@ -18,7 +18,7 @@ const AboutMe = () => {
                     <p>
                         Currently studying, practicing, and looking for new opportunities.
                     </p>
-                    <Link to="" className="contact-link inline-block mt-4 font-semibold text-2xl">Contact me →</Link>
+                    <Link to="Contact" className="contact-link inline-block mt-4 font-bold text-xl cursor-pointer text-[#007bff] hover:scale-110 transition duration-300 ease-out hover:ease-in ">Contact me →</Link>
                 </div>
 
                 <img className='aboutImg relative h-80 w-80' src={aboutImage} alt="" />

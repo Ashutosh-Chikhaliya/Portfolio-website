@@ -12,10 +12,23 @@ const Home = () => {
     const [yVal, setYVal] = useState(0);
 
     const mouseMoving = (e) => {
-        setXVal((e.clientX - tiltRef.current.getBoundingClientRect().x - tiltRef.current.getBoundingClientRect().width / 2) / 40)
-        setYVal(-(e.clientY - tiltRef.current.getBoundingClientRect().y - tiltRef.current.getBoundingClientRect().width / 2) / 50)
+        // Get the bounding rectangle of the tiltRef div
+        const rect = tiltRef.current.getBoundingClientRect();
 
-        tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`
+        // Calculate the center of the div
+        const divCenterX = rect.x + rect.width / 2;
+        const divCenterY = rect.y + rect.height / 2;
+
+        // Calculate the deviation from the center of the div
+        const offsetX = e.clientX - divCenterX;
+        const offsetY = e.clientY - divCenterY;
+
+        // Adjust values for smoother or more dramatic effect
+        setXVal(offsetX / 50);
+        setYVal(-offsetY / 20);
+
+        // Apply transform based on the calculated values
+        tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`;
     }
 
     return (
