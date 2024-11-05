@@ -20,7 +20,7 @@ const Home = () => {
         const offsetY = (e.clientY - divCenterY) / 10;
 
         // Calculate rotation angles for tilt effect
-        const rotateX = (e.clientY - divCenterY) / 25; // Rotation around X-axis
+        const rotateX = (e.clientY - divCenterY) / 18; // Rotation around X-axis
         const rotateY = -(e.clientX - divCenterX) / 25; // Rotation around Y-axis
 
         // Apply both translate and rotate transforms
@@ -39,11 +39,7 @@ const Home = () => {
                     <h1 className="name-title text-7xl font-bold tracking-wide">
                         ASHUTOSH CHIKHALIYA<span className="highlight-blue">.</span>
                     </h1>
-                    <div
-                        ref={tiltRef}
-                        className='absolute -z-10 top-36 rounded-2xl profile-card flex justify-between flex-col items-center'>
-                        <img src="../src/assets/Untitled.jpg" width={"30%"} className='rounded-xl shadow-slate-800 shadow-2xl' />
-                    </div>
+                    <img ref={tiltRef} src="/public/Images/profile.jpg" width={"20%"} className='shadow-slate-800 shadow-2xl absolute -z-10 top-36 rounded-2xl profile-card flex flex-col items-center' />
                     <h2 className="sub-title mt-3 highlight-blue text-4xl">Web Developer</h2>
                     <Email />
                 </div>

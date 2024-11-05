@@ -81,8 +81,6 @@ body.dark .contact-box {
 }
 
 .profile-card {
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
   transition: transform 0.3s ease-out;
   transform-style: preserve-3d;
 }
