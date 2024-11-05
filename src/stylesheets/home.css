@@ -6,6 +6,8 @@
 
 .name-title {
   font-family: "Saira", sans-serif;
+  text-shadow: 2px 2px 2px rgba(9, 28, 48, 0.3),
+    4px 4px 5px rgba(12, 8, 41, 0.2), 6px 6px 8px rgba(18, 46, 50, 0.1);
 }
 
 body.dark .name-title {
@@ -78,7 +80,9 @@ body.dark .contact-box {
   perspective: 2000px;
 }
 
-/* tilt Div */
-#tiltDiv {
-  width: fit-content;
+.profile-card {
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
 }
