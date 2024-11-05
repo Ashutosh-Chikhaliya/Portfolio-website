@@ -42,7 +42,7 @@ const Home = () => {
                     <div
                         ref={tiltRef}
                         className='absolute -z-10 top-36 rounded-2xl profile-card flex justify-between flex-col items-center'>
-                        <img src="/src/assets/Untitled.jpg" width={"30%"} className='rounded-xl shadow-slate-800 shadow-2xl' />
+                        <img src="../../src/assets/Untitled.jpg" width={"30%"} className='rounded-xl shadow-slate-800 shadow-2xl' />
                     </div>
                     <h2 className="sub-title mt-3 highlight-blue text-4xl">Web Developer</h2>
                     <Email />
