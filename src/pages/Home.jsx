@@ -39,7 +39,7 @@ const Home = () => {
                     <h1 className="name-title text-7xl font-bold tracking-wide">
                         ASHUTOSH CHIKHALIYA<span className="highlight-blue">.</span>
                     </h1>
-                    <img ref={tiltRef} src="/public/Images/profile.jpg" width={"20%"} className='shadow-slate-800 shadow-2xl absolute -z-10 top-36 rounded-2xl profile-card flex flex-col items-center' />
+                    <img ref={tiltRef} src="/Images/profile.jpg" width={"20%"} className='shadow-slate-800 shadow-2xl absolute -z-10 top-36 rounded-2xl profile-card flex flex-col items-center' />
                     <h2 className="sub-title mt-3 highlight-blue text-4xl">Web Developer</h2>
                     <Email />
                 </div>
