@@ -35,7 +35,7 @@ const Navbar = () => {
                     </h1>
 
                     <ul className={`nav-links ${isOpen ? 'active' : ''} flex justify-center items-center`}>
-                        {['Home', 'About-Me', 'Projects', 'Skills', 'Contact'].map((link) => (
+                        {['Home', 'About-Me', 'Projects', 'Skills', 'Resume', 'Contact'].map((link) => (
                             <li key={link} className='cursor-pointer'>
                                 <Link
                                     to={link} // Match section id
@@ -64,7 +64,6 @@ const Navbar = () => {
 
                         <button onClick={toggleTheme} className={`text-xl ${isDarkMode ? 'text-blue-500' : 'text-black'} theme-button w-6 h-6`}>
                             <img src={isDarkMode ? moonImg : sunImg} alt={isDarkMode ? "moon icon" : "sun icon"} />
-
                         </button>
                     </div>
                 </div>

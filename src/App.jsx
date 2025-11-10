@@ -9,6 +9,7 @@ import Skills from './pages/Skills.jsx';
 import AboutMe from './pages/AboutMe.jsx';
 import Footer from './components/Footer.jsx';
 import ProjectsPage from './pages/ProjectsPage.jsx';
+import Resume from './pages/Resume.jsx';
 
 
 
@@ -32,6 +33,10 @@ function App() {
 
       <div id="Skills" className='pt-16'>
         <Skills />
+      </div>
+
+      <div id="Resume" className='pt-16'>
+        <Resume />
       </div>
 
       <div id="Contact" className='pt-16'>
