@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/480/javascript--v1.png"
+  },
+  {
+    "id": 2,
+    "name": "React",
+    "icon": "https://img.icons8.com/ultraviolet/480/react--v1.png"
+  },
+  {
+    "id": 3,
+    "name": "Node.js",
+    "icon": "https://img.icons8.com/fluency/480/node-js.png"
+  },
+  {
+    "id": 4,
+    "name": "CSS",
+    "icon": "https://img.icons8.com/color/480/css3.png"
+  },
+  {
+    "id": 5,
+    "name": "HTML",
+    "icon": "https://img.icons8.com/color/480/html-5--v1.png"
+  },
+
+  {
+    "id": 6,
+    "name": "Express",
+    "icon": "https://img.icons8.com/color/480/express-js.png"
+  },
+
+  {
+    "id": 7,
+    "name": "Tailwincss",
+    "icon": "https://img.icons8.com/color/480/tailwindcss.png"
+  },
+
+  {
+    "id": 8,
+    "name": "Git",
+    "icon": "https://img.icons8.com/color/480/git.png"
+  },
+
+  {
+    "id": 9,
+    "name": "MongoDB",
+    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/384/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"
+  }
+]

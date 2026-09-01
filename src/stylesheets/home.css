@@ -1,0 +1,86 @@
+/* home page */
+
+.homepage-container {
+  width: 70vw;
+}
+
+.name-title {
+  font-family: "Saira", sans-serif;
+  text-shadow: 2px 2px 2px rgba(9, 28, 48, 0.3),
+    4px 4px 5px rgba(12, 8, 41, 0.2), 6px 6px 8px rgba(18, 46, 50, 0.1);
+}
+
+body.dark .name-title {
+  color: white;
+}
+
+/* Contact box styling */
+.contact-box {
+  font-family: "Saira", sans-serif;
+  border: 1px solid rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+body.dark .contact-box {
+  color: #ecf0f1;
+  border: 1px solid white;
+}
+
+.contact-box .text {
+  transition: opacity 0.3s ease;
+}
+
+.contact-box .copy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.contact-box::before {
+  border: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 123, 255);
+  transition: right 0.4s ease;
+  z-index: 1;
+}
+
+.contact-box:hover::before {
+  right: 0;
+}
+
+.contact-box:hover .copy {
+  opacity: 1;
+}
+
+.contact-box:hover .text {
+  opacity: 0;
+}
+
+.contact-box.copied::before {
+  background-color: #27ae60;
+  right: 0;
+}
+
+.contact-box.copied .copy {
+  opacity: 1;
+}
+
+.contact-box.copied .text {
+  opacity: 0;
+}
+
+#perpective {
+  position: relative;
+  perspective: 2000px;
+}
+
+.profile-card {
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+}

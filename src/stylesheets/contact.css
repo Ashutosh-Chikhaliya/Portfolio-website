@@ -1,0 +1,22 @@
+.contact-page {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+body.dark .contact-page {
+  color: white;
+}
+
+body.dark .subtitle {
+  color: rgb(164, 164, 164);
+}
+
+/* Social Media Section */
+
+.social-icon img {
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+  filter: invert(1);
+}
